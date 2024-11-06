@@ -90,7 +90,12 @@ class Environment:
             self.crystal = np.zeros((max_iteration, H, W, 4)) # type, age, tr,  id
             self.iteration = 0
         else:
-            assert False, "There exists an experiment with this name."
+            #assert False, "There exists an experiment with this name."
+            self.map, self.agents, self.loc_to_agent, self.id_to_agent = self._generate_map()
+            self._set_initial_states()
+            self.mask = self._get_mask()
+            self.crystal = np.zeros((max_iteration, H, W, 4)) # type, age, tr,  id
+            self.iteration = 0
 
     def configure(self, prey, penalty, age):
         self.prey_reward = prey
@@ -121,8 +126,9 @@ class Environment:
             (di, dj) = by
             (i_n, j_n) = self._add((i, j), (di, dj)) #new location
             agent.set_decision((i_n, j_n))
+            rew_geo=self.geometric(agent)
             if self.map[i_n, j_n] == self.names_to_vals["free"]:
-                rew = self.on_free(agent)
+                rew =  self.on_free(agent)
                 assert rew != None
             elif self.map[i_n, j_n] == self.names_to_vals["prey"]:
                 prey = self.loc_to_agent[(i_n, j_n)]
@@ -142,7 +148,7 @@ class Environment:
                 rew = self.on_same(agent, other_agent)
                 assert rew != None
             done = False
-            self.update_agent(agent, rew, done)
+            self.update_agent(agent, rew+rew_geo, done)
             agent.clear_decision()
         else:
             resurrected = self.resurrect(agent)
@@ -151,6 +157,10 @@ class Environment:
                 assert agent.get_time_remaining() == self.agent_max_age, agent.get_time_remaining()
                 assert agent.get_loc() != None, "wtf?"
         return rew
+    
+    def geometric(self, agent):
+        raise NotImplementedError('Please implement what to'\
+         'do when agent moving on the grid.')
 
     def on_free(self, agent):
         raise NotImplementedError('Please implement what to'\

@@ -1,0 +1,604 @@
+/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py:146: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/_temp/anaconda/conda-bld/pytorch_1729647038473/work/torch/csrc/utils/tensor_new.cpp:281.)
+  batch_state = torch.cat([torch.tensor(s) for s in batch_state])
+I: 1	Time Elapsed: 0.01Process Process-1:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 124, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 208, in forward
+    x = F.relu(self.l5(F.relu(self.l4(F.relu(self.l3(F.relu(self.l2(F.relu(self.l1(x))))))))))
+                                                                           ^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+RuntimeError: Input type (double) and bias type (float) should be the same
+Process Process-2:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 124, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 208, in forward
+    x = F.relu(self.l5(F.relu(self.l4(F.relu(self.l3(F.relu(self.l2(F.relu(self.l1(x))))))))))
+                                                                           ^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+RuntimeError: Input type (double) and bias type (float) should be the same
+Process Process-3:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 124, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 208, in forward
+    x = F.relu(self.l5(F.relu(self.l4(F.relu(self.l3(F.relu(self.l2(F.relu(self.l1(x))))))))))
+                                                                           ^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+RuntimeError: Input type (double) and bias type (float) should be the same
+Process Process-4:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 124, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 208, in forward
+    x = F.relu(self.l5(F.relu(self.l4(F.relu(self.l3(F.relu(self.l2(F.relu(self.l1(x))))))))))
+                                                                           ^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+RuntimeError: Input type (double) and bias type (float) should be the same
+Process Process-5:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 124, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 208, in forward
+    x = F.relu(self.l5(F.relu(self.l4(F.relu(self.l3(F.relu(self.l2(F.relu(self.l1(x))))))))))
+                                                                           ^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+RuntimeError: Input type (double) and bias type (float) should be the same
+Process Process-6:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 124, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 208, in forward
+    x = F.relu(self.l5(F.relu(self.l4(F.relu(self.l3(F.relu(self.l2(F.relu(self.l1(x))))))))))
+                                                                           ^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+RuntimeError: Input type (double) and bias type (float) should be the same
+I: 1	Time Elapsed: 0.01Process Process-1:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 202, in forward
+    [N, a, b, c] = x.size()
+    ^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 4)
+Process Process-2:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 202, in forward
+    [N, a, b, c] = x.size()
+    ^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 4)
+Process Process-3:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 202, in forward
+    [N, a, b, c] = x.size()
+    ^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 4)
+Process Process-4:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 202, in forward
+    [N, a, b, c] = x.size()
+    ^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 4)
+Process Process-5:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 202, in forward
+    [N, a, b, c] = x.size()
+    ^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 4)
+Process Process-6:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 202, in forward
+    [N, a, b, c] = x.size()
+    ^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 4)
+/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py:139: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/_temp/anaconda/conda-bld/pytorch_1729647038473/work/torch/csrc/utils/tensor_new.cpp:281.)
+  batch_state = torch.cat([torch.tensor(s,dtype=torch.float32) for s in batch_state])
+I: 1	Time Elapsed: 0.01Process Process-1:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: gather(): Expected dtype int64 for index
+Process Process-2:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: gather(): Expected dtype int64 for index
+Process Process-3:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: gather(): Expected dtype int64 for index
+Process Process-4:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: gather(): Expected dtype int64 for index
+Process Process-5:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: gather(): Expected dtype int64 for index
+Process Process-6:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: gather(): Expected dtype int64 for index
+/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py:139: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/_temp/anaconda/conda-bld/pytorch_1729647038473/work/torch/csrc/utils/tensor_new.cpp:281.)
+  batch_state = torch.cat([torch.tensor(s,dtype=torch.float32) for s in batch_state])
+I: 1	Time Elapsed: 0.01Process Process-1:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: gather(): Expected dtype int64 for index
+Process Process-2:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: gather(): Expected dtype int64 for index
+Process Process-3:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: gather(): Expected dtype int64 for index
+Process Process-4:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: gather(): Expected dtype int64 for index
+Process Process-5:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: gather(): Expected dtype int64 for index
+Process Process-6:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 117, in opt
+    current_q_values = self.network(type * batch_state, batch_age).gather(1, batch_action)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: gather(): Expected dtype int64 for index
+/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py:139: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/_temp/anaconda/conda-bld/pytorch_1729647038473/work/torch/csrc/utils/tensor_new.cpp:281.)
+  batch_state = torch.cat([torch.tensor(s,dtype=torch.float32) for s in batch_state])
+I: 1	Time Elapsed: 0.01I: 2	Time Elapsed: 2.62I: 3	Time Elapsed: 5.18I: 4	Time Elapsed: 6.35I: 5	Time Elapsed: 7.06I: 6	Time Elapsed: 7.57I: 7	Time Elapsed: 7.93I: 8	Time Elapsed: 8.21I: 9	Time Elapsed: 8.42Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 132, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: pickle data was truncated
+/opt/anaconda3/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 7 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+Traceback (most recent call last):
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/schelling_example.py", line 161, in <module>
+    play(society((50, 50), agent_range = int(agent_range),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/schelling_example.py", line 26, in __init__
+    super(Schelling, self).__init__(size, p_hunter, p_prey,
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/environment.py", line 39, in __init__
+    self.A_mind = Mind(input_size, num_actions, self.lock, Queue())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 29, in __init__
+    self.network.share_memory()
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 2920, in share_memory
+    return self._apply(lambda t: t.share_memory_())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 927, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 2920, in <lambda>
+    return self._apply(lambda t: t.share_memory_())
+                                 ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/_tensor.py", line 773, in share_memory_
+    self._typed_storage()._share_memory_()
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 1172, in _share_memory_
+    self._untyped_storage.share_memory_()
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 437, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 508, in share_memory_
+    return super().share_memory_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 386, in share_memory_
+    self._share_filename_cpu_()
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 437, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 516, in _share_filename_cpu_
+    return super()._share_filename_cpu_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: _share_filename_: only available on CPU
+Traceback (most recent call last):
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/schelling_example.py", line 161, in <module>
+    play(society((50, 50), agent_range = int(agent_range),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/schelling_example.py", line 26, in __init__
+    super(Schelling, self).__init__(size, p_hunter, p_prey,
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/environment.py", line 39, in __init__
+    self.A_mind = Mind(input_size, num_actions, self.lock, Queue())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 24, in __init__
+    self.network = DQN(input_size, num_actions).to(self.device)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1340, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 927, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1326, in convert
+    return t.to(
+           ^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/cuda/__init__.py", line 310, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py:140: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/_temp/anaconda/conda-bld/pytorch_1729647038473/work/torch/csrc/utils/tensor_new.cpp:281.)
+  batch_state = torch.cat([torch.tensor(s,dtype=torch.float32) for s in batch_state])
+I: 1	Time Elapsed: 0.01I: 2	Time Elapsed: 2.69Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 132, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: pickle data was truncated
+/opt/anaconda3/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 7 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+Traceback (most recent call last):
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/schelling_example.py", line 161, in <module>
+    play(society((50, 50), agent_range = int(agent_range),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/schelling_example.py", line 26, in __init__
+    super(Schelling, self).__init__(size, p_hunter, p_prey,
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/environment.py", line 39, in __init__
+    self.A_mind = Mind(input_size, num_actions, self.lock, Queue())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 26, in __init__
+    self.network.share_memory()
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 2920, in share_memory
+    return self._apply(lambda t: t.share_memory_())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 927, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 2920, in <lambda>
+    return self._apply(lambda t: t.share_memory_())
+                                 ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/_tensor.py", line 773, in share_memory_
+    self._typed_storage()._share_memory_()
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 1172, in _share_memory_
+    self._untyped_storage.share_memory_()
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 437, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 508, in share_memory_
+    return super().share_memory_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 386, in share_memory_
+    self._share_filename_cpu_()
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 437, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 516, in _share_filename_cpu_
+    return super()._share_filename_cpu_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: _share_filename_: only available on CPU
+Traceback (most recent call last):
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/schelling_example.py", line 161, in <module>
+    play(society((50, 50), agent_range = int(agent_range),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/schelling_example.py", line 26, in __init__
+    super(Schelling, self).__init__(size, p_hunter, p_prey,
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/environment.py", line 39, in __init__
+    self.A_mind = Mind(input_size, num_actions, self.lock, Queue())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py", line 26, in __init__
+    self.network.share_memory()
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 2920, in share_memory
+    return self._apply(lambda t: t.share_memory_())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 927, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 2920, in <lambda>
+    return self._apply(lambda t: t.share_memory_())
+                                 ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/_tensor.py", line 773, in share_memory_
+    self._typed_storage()._share_memory_()
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 1172, in _share_memory_
+    self._untyped_storage.share_memory_()
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 437, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 508, in share_memory_
+    return super().share_memory_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 386, in share_memory_
+    self._share_filename_cpu_()
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 437, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/torch/storage.py", line 516, in _share_filename_cpu_
+    return super()._share_filename_cpu_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: _share_filename_: only available on CPU
+/Users/yzaho/Library/Mobile Documents/com~apple~CloudDocs/PhD/lecture/Complex Social System/segregation/segregation/mind.py:140: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/_temp/anaconda/conda-bld/pytorch_1729647038473/work/torch/csrc/utils/tensor_new.cpp:281.)
+  batch_state = torch.cat([torch.tensor(s,dtype=torch.float32) for s in batch_state])
+I: 1	Time Elapsed: 0.01I: 2	Time Elapsed: 2.65I: 3	Time Elapsed: 5.07I: 4	Time Elapsed: 6.28I: 5	Time Elapsed: 7.06I: 6	Time Elapsed: 7.56I: 7	Time Elapsed: 7.87I: 8	Time Elapsed: 8.11I: 9	Time Elapsed: 8.33I: 10	Time Elapsed: 8.52I: 11	Time Elapsed: 8.67I: 12	Time Elapsed: 8.77I: 13	Time Elapsed: 8.88I: 14	Time Elapsed: 8.96I: 15	Time Elapsed: 9.06I: 16	Time Elapsed: 9.16I: 17	Time Elapsed: 9.21I: 18	Time Elapsed: 9.27I: 19	Time Elapsed: 9.31I: 20	Time Elapsed: 9.35I: 21	Time Elapsed: 9.38I: 22	Time Elapsed: 9.41I: 23	Time Elapsed: 9.44I: 24	Time Elapsed: 9.47I: 25	Time Elapsed: 9.51I: 26	Time Elapsed: 9.56I: 27	Time Elapsed: 9.60I: 28	Time Elapsed: 9.63I: 29	Time Elapsed: 9.67I: 30	Time Elapsed: 9.71I: 31	Time Elapsed: 9.74I: 32	Time Elapsed: 9.78I: 33	Time Elapsed: 9.81I: 34	Time Elapsed: 9.83I: 35	Time Elapsed: 9.86I: 36	Time Elapsed: 9.90I: 37	Time Elapsed: 9.94I: 38	Time Elapsed: 9.97I: 39	Time Elapsed: 10.00I: 40	Time Elapsed: 10.04I: 41	Time Elapsed: 10.07I: 42	Time Elapsed: 10.09I: 43	Time Elapsed: 10.11I: 44	Time Elapsed: 10.14I: 45	Time Elapsed: 10.15I: 46	Time Elapsed: 10.17I: 47	Time Elapsed: 10.19I: 48	Time Elapsed: 10.21I: 49	Time Elapsed: 10.23I: 50	Time Elapsed: 10.25I: 51	Time Elapsed: 10.27I: 52	Time Elapsed: 10.28I: 53	Time Elapsed: 10.30I: 54	Time Elapsed: 10.31I: 55	Time Elapsed: 10.33I: 56	Time Elapsed: 10.34I: 57	Time Elapsed: 10.37I: 58	Time Elapsed: 10.38I: 59	Time Elapsed: 10.38I: 60	Time Elapsed: 10.39I: 61	Time Elapsed: 10.41I: 62	Time Elapsed: 10.42I: 63	Time Elapsed: 10.43I: 64	Time Elapsed: 10.44I: 65	Time Elapsed: 10.45I: 66	Time Elapsed: 10.46I: 67	Time Elapsed: 10.47I: 68	Time Elapsed: 10.49I: 69	Time Elapsed: 10.50I: 70	Time Elapsed: 10.51I: 71	Time Elapsed: 10.53I: 72	Time Elapsed: 10.54I: 73	Time Elapsed: 10.55I: 74	Time Elapsed: 10.57I: 75	Time Elapsed: 10.59I: 76	Time Elapsed: 10.60I: 77	Time Elapsed: 10.61I: 78	Time Elapsed: 10.62I: 79	Time Elapsed: 10.63I: 80	Time Elapsed: 10.65I: 81	Time Elapsed: 10.66I: 82	Time Elapsed: 10.67I: 83	Time Elapsed: 10.68I: 84	Time Elapsed: 10.70I: 85	Time Elapsed: 10.71I: 86	Time Elapsed: 10.73I: 87	Time Elapsed: 10.74I: 88	Time Elapsed: 10.76I: 89	Time Elapsed: 10.77I: 90	Time Elapsed: 10.78I: 91	Time Elapsed: 10.79I: 92	Time Elapsed: 10.81I: 93	Time Elapsed: 10.82I: 94	Time Elapsed: 10.82I: 95	Time Elapsed: 10.83I: 96	Time Elapsed: 10.84I: 97	Time Elapsed: 10.84I: 98	Time Elapsed: 10.85I: 99	Time Elapsed: 10.85I: 100	Time Elapsed: 10.86SIMULATION IS FINISHED.
