@@ -35,7 +35,6 @@ class Schelling(Environment):
         self.beta = beta
         self.gamma = gamma
         self.alive_reward = 0.1
-        self.geo_reward=1
 
     def default(self, agent):
         curr = self.get_agent_state(agent)
@@ -44,13 +43,6 @@ class Schelling(Environment):
         sames = default[default > 0.1].sum()
         diffs = self.alpha * default[default < -0.1].sum()
         return sames + diffs
-    
-    def geometric(self, agent):
-        (i,j)=agent.get_loc()
-        if i**2+j**2<10**2:
-            return self.geo_reward
-        else:
-            return 0
 
     def on_free(self, agent):
         self.move(agent)
